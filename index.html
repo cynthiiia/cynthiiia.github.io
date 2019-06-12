@@ -40,11 +40,31 @@
       background-color:#DB9281;
       color: #ffffff;
     }
+    div.hobbies-subsection h3{
+      background-color:#DB9281;
+      color: rgb(73, 73, 73);
+    }
     .carousel .item img {
       max-height: 540px;
       min-width: auto;
       margin: auto; 
     }
+    .right-col {
+      overflow-y:scroll;
+    }
+    .right-col::-webkit-scrollbar { 
+      display: none; 
+    }
+    .thumbnail {
+      padding: 0 0 0 0;
+      border: none;
+      border-radius: 0;
+    }
+    .thumbnail img:hover {
+      box-shadow: 0 0 5px 3px rgba(219, 146, 129, 0.5);
+      opacity: 0.9;
+    }
+
     </style>
   </head>
 
@@ -120,14 +140,43 @@
       <!--Hobbies section heading-->
         <div class="col-lg-6 col-xs-12 hobbies-subsection">
           <h1>Hobbies</h1>
-          <h2>_____________</h2>
+          <h1>_____________</h1>
+          <h3><br><br>Travelling</h3>
+          <h3><br>Drawing</h3>
+          <h3><br>Cooking</h3>
+
+          <h3><br></h3>
         </div>
-        <div class="col-lg-6 col-xs-12 about-subsection">
-          <h1>filler</h1>
-          <h2>_____________</h2>
+        <div class="col-lg-6 col-xs-12 about-subsection right-col">
+          <div class="row">
+            <div class="col-lg-12 col-xs-12 about-subsection right-col">
+              <h1>Travelling</h1>
+              <h1>_____________</h1>
+              <p><br><br>I left the country for the first time this year, so not sure if I can call this a hobby yet. But I loved it. We went to Mexico for 8 days.<br><br></p>
+            </div>
+          </div>
+          
+          <div class="row"> 
+            <div class="col-lg-4 col-xs-4 about-subsection right-col">
+              <div class="thumbnail">
+                  <img src="/Images/Mexico1.jpg" alt="Mexico1">
+              </div>
+            </div>
+            <div class="col-lg-4 col-xs-4 about-subsection right-col">
+              <div class="thumbnail">
+                  <img src="/Images/Mexico2.jpg" alt="Mexico2">
+              </div>
+            </div>
+            <div class="col-lg-4 col-xs-4 about-subsection right-col">
+              <div class="thumbnail">
+                  <img src="/Images/Mexico3.jpg" alt="Mexico3">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    
   </body>
 
 </body>
