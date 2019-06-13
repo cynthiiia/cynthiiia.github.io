@@ -28,11 +28,16 @@
       color: #ffffff;
       height:100%;
     }
-    .about-subsection .row .col-lg-6 {
+    .about-subsection .row .col-lg-6, .about-subsection .row .col-xs-12 {
       padding: 60px 50px;
     }
     div.about-subsection h2 {
       color:#DB9281;
+    }
+    .carousel .item img {
+      height: 530px;
+      min-width: auto;
+      margin: auto; 
     }
     .interests-subsection {
       background-color:#DB9281;
@@ -42,10 +47,8 @@
     div.interests-subsection h2{
       color: rgb(73, 73, 73);
     }
-    .carousel .item img {
-      height: 530px;
-      min-width: auto;
-      margin: auto; 
+    .interests-subsection img {
+      border-radius: 3px;
     }
     /*.right-col {
       overflow-y:scroll;
@@ -63,6 +66,78 @@
       opacity: 0.9;
     }
 
+
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    }
+
+    /* Modal Content (Image) */
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    /* Caption of Modal Image (Image Text) - Same Width as the Image */
+    #caption {
+      margin: auto;
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+      text-align: center;
+      color: #ccc;
+      padding: 10px 0;
+      height: 150px;
+    }
+
+    /* Add Animation - Zoom in the Modal */
+    .modal-content, #caption { 
+      animation-name: zoom;
+      animation-duration: 0.6s;
+    }
+
+    @keyframes zoom {
+      from {transform:scale(0)} 
+      to {transform:scale(1)}
+    }
+
+    /* The Close Button */
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    /* 100% Image Width on Smaller Screens */
+    @media only screen and (max-width: 700px){
+      .modal-content {
+        width: 100%;
+      }
+    }
+
     </style>
   </head>
 
@@ -77,7 +152,7 @@
     
     <!--About section-->
     <div class="container-fluid about-subsection">
-      <div class="row">
+      <div class="row about-subsection">
         
         <!--About section heading-->
         <div class="col-lg-6 col-xs-12 about-subsection">
@@ -153,7 +228,7 @@
           <h1>Interests</h1>
           <h2>_____________</h2>
           <h3><br>Travelling</h3>
-          <p><br>This year, I left the country for the first time! We went to Mexico for 8 days.</p><br>
+          <p><br>This year, I left the country for the first time! We went to Mexico for 8 days. We stayed at the Grand Princess Sunset all-inclusive resort.</p><br>
         </div>
       </div>
       <div class="row"> 
@@ -162,7 +237,7 @@
 
             <div class="col-lg-12 col-xs-12">
               <div class="thumbnail">
-                  <img src="/Images/Mexico4.jpg" alt="Mexico1">
+                  <img id="Mexico1" src="/Images/Mexico4.jpg" alt="Palm Trees!">
               </div>
             </div>
 
@@ -172,13 +247,13 @@
 
             <div class="col-lg-6 col-xs-6">
               <div class="thumbnail">
-                  <img src="/Images/Mexico1.jpg" alt="Mexico1">
+                  <img id="Mexico2" src="/Images/Mexico1.jpg" alt="Taco Cart Tacos - Our favourite item in the resort">
               </div>
             </div>
 
             <div class="col-lg-6 col-xs-6">
               <div class="thumbnail">
-                  <img src="/Images/Mexico5.jpg" alt="Mexico1">
+                  <img id="Mexico3" src="/Images/Mexico5.jpg" alt="Window Seat View">
               </div>
             </div>
 
@@ -187,7 +262,7 @@
 
             <div class="col-lg-12 col-xs-12">
               <div class="thumbnail">
-                  <img src="/Images/Mexico8.jpg" alt="Mexico1">
+                  <img id="Mexico4" src="/Images/Mexico8.jpg" alt="Beach">
               </div>
             </div>
 
@@ -200,13 +275,13 @@
 
             <div class="col-lg-6 col-xs-6">
               <div class="thumbnail">
-                  <img src="/Images/Mexico2.jpg" alt="Mexico1">
+                  <img id="Mexico5" src="/Images/Mexico2.jpg" alt="Gordon & his breakfast">
               </div>
             </div>
 
             <div class="col-lg-6 col-xs-6">
               <div class="thumbnail">
-                  <img src="/Images/Mexico3.jpg" alt="Mexico1">
+                  <img id="Mexico6" src="/Images/Mexico3.jpg" alt="By the Pool">
               </div>
             </div>
 
@@ -215,7 +290,7 @@
 
             <div class="col-lg-12 col-xs-12">
               <div class="thumbnail">
-                  <img src="/Images/Mexico9.jpg" alt="Mexico1">
+                  <img id="Mexico7" src="/Images/Mexico9.jpg" alt="La Fleur Appetizer">
               </div>
             </div>
 
@@ -225,7 +300,7 @@
 
             <div class="col-lg-12 col-xs-12">
               <div class="thumbnail">
-                  <img src="/Images/Mexico10.jpg" alt="Mexico1">
+                  <img id="Mexico8" src="/Images/Mexico10.jpg" alt="Mmm Cocktails">
               </div>
             </div>
 
@@ -239,7 +314,7 @@
 
             <div class="col-lg-12 col-xs-12">
               <div class="thumbnail">
-                  <img src="/Images/Mexico11.jpg" alt="Mexico1">
+                  <img id="Mexico9" src="/Images/Mexico11.jpg" alt="Balcony">
               </div>
             </div>
 
@@ -248,7 +323,7 @@
 
             <div class="col-lg-12 col-xs-12">
               <div class="thumbnail">
-                  <img src="/Images/Mexico12.jpg" alt="Mexico1">
+                  <img id="Mexico10" src="/Images/Mexico12.jpg" alt="Beach">
               </div>
             </div>
 
@@ -258,31 +333,71 @@
 
             <div class="col-lg-6 col-xs-6">
               <div class="thumbnail">
-                  <img src="/Images/Mexico6.jpg" alt="Mexico1">
+                  <img id="Mexico11" src="/Images/Mexico6.jpg" alt="Lizard - They were everywhere!">
               </div>
             </div>
 
             <div class="col-lg-6 col-xs-6">
               <div class="thumbnail">
-                  <img src="/Images/Mexico7.jpg" alt="Mexico1">
+                  <img id="Mexico12" src="/Images/Mexico7.jpg" alt="Path that spans across the entire resort">
               </div>
             </div>
 
           </div>
             
         </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- The Close Button -->
+          <span class="close">&times;</span>
+        
+          <!-- Modal Content (The Image) -->
+          <img class="modal-content" id="img01">
+        
+          <!-- Modal Caption (Image Text) -->
+          <div id="caption"></div>
+        </div>
+
       </div>
       
-      <!--<div class="row">
+      <div class="row">
         <div class="col-lg-12 col-xs-12"> 
           <h3><br>Drawing</h3>
           <h3><br>Cooking</h3>
         </div>
-      </div>//-->
+      </div>
     </div>
     
+
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+      
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      for(var i = 1; i < 13; i++) {
+        var img = document.getElementById("Mexico" + i);
+        img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+      }
+
+
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+      
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() { 
+        modal.style.display = "none";
+      }
+      </script>
+
+
   </body>
 
-</body>
 
 </html>
