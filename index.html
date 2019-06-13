@@ -16,22 +16,20 @@
     html, body {
       height:100%;
     }
-    .container-fluid {
-      height:100%;
-    }
-    .col-lg-6 {
-      height:100%;
-      padding: 60px 50px;
-    }
     .intro-bg {
       background-image: url('/Images/Graduation4.jpg');
       background-size:cover;
       color: #ffffff;
       font-size:70px;
+      height:100%;
     }
     .about-subsection {
       background-color:rgb(73, 73, 73);
       color: #ffffff;
+      height:100%;
+    }
+    .about-subsection .row .col-lg-6 {
+      padding: 60px 50px;
     }
     div.about-subsection h3 {
       color:#DB9281;
@@ -39,9 +37,9 @@
     .interests-subsection {
       background-color:#DB9281;
       color: #ffffff;
+      padding: 60px 50px;
     }
     div.interests-subsection h3{
-      background-color:#DB9281;
       color: rgb(73, 73, 73);
     }
     .carousel .item img {
@@ -49,19 +47,19 @@
       min-width: auto;
       margin: auto; 
     }
-    .right-col {
+    /*.right-col {
       overflow-y:scroll;
     }
     .right-col::-webkit-scrollbar { 
       display: none; 
-    }
+    }*/
     .thumbnail {
       padding: 0 0 0 0;
       border: none;
       border-radius: 0;
     }
     .thumbnail img:hover {
-      box-shadow: 0 0 5px 3px rgba(219, 146, 129, 0.5);
+      box-shadow: 0 0 5px 3px rgba(73, 73, 73, 0.5);
       opacity: 0.9;
     }
 
@@ -78,11 +76,11 @@
     </div>
     
     <!--About section-->
-    <div class="container-fluid">
-      <div class="row" style="height:100%;">
+    <div class="container-fluid about-subsection">
+      <div class="row">
         
         <!--About section heading-->
-        <div class="col-lg-6 col-xs-12 about-subsection">
+        <div class="col-lg-6 col-xs-12">
           <h1>About</h1>
           <h1>_____________</h1>
           <h3><br>I am a recent graduate of the University of Toronto.</h3>
@@ -98,7 +96,7 @@
         <div class="col-lg-6 col-xs-12">
           
           <h2><strong>Convocation - June 4, 2019 <span class="glyphicon glyphicon-heart-empty" style="color:#DB9281 "></span></strong></h2>
-          <div id="myCarousel" class="carousel slide" data-ride="carousel" style="background-color: rgb(187, 187, 187)">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel" style="background-color: rgb(73, 73, 73)">
             <!-- Indicators -->
             <ol class="carousel-indicators">
               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -130,65 +128,61 @@
               <span class="glyphicon glyphicon-chevron-right"></span>
               <span class="sr-only">Next</span>
             </a>
+
           </div>
         </div>
       </div>
     </div>
 
     <!--Interests section-->
-    <div class="container-fluid">
-      <div class="row" style="height:100%;">
+    <div class="container-fluid interests-subsection">
+      <div class="row">
         
       <!--Interests section heading-->
-        <div class="col-lg-6 col-xs-12 interests-subsection">
+        <div class="col-lg-12 col-xs-12">
           <h1>Interests</h1>
           <h1>_____________</h1>
           <h3><br><br>Travelling</h3>
+          <p><br><br>This year, I left the country for the first time! We went to Mexico for 8 days.<br><br></p>
+        </div>
+      </div>
+      <div class="row"> 
+        <div class="col-lg-2 col-xs-4 ">
+          <div class="thumbnail">
+              <img src="/Images/Mexico1.jpg" alt="Mexico1">
+          </div>
+        </div>
+        <div class="col-lg-2 col-xs-4 ">
+          <div class="thumbnail">
+              <img src="/Images/Mexico2.jpg" alt="Mexico2">
+          </div>
+        </div>
+        <div class="col-lg-2 col-xs-4 ">
+          <div class="thumbnail">
+              <img src="/Images/Mexico3.jpg" alt="Mexico3">
+          </div>
+        </div>
+        <div class="col-lg-2 col-xs-4">
+          <div class="thumbnail">
+              <img src="/Images/Mexico1.jpg" alt="Mexico1">
+          </div>
+        </div>
+        <div class="col-lg-2 col-xs-4 ">
+          <div class="thumbnail">
+              <img src="/Images/Mexico2.jpg" alt="Mexico2">
+          </div>
+        </div>
+        <div class="col-lg-2 col-xs-4 ">
+          <div class="thumbnail">
+              <img src="/Images/Mexico3.jpg" alt="Mexico3">
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-12 col-xs-12"> 
           <h3><br>Drawing</h3>
           <h3><br>Cooking</h3>
-
-          <h3><br></h3>
-        </div>
-        <div class="col-lg-6 col-xs-12 about-subsection right-col">
-          <div class="row">
-            <div class="col-lg-12 col-xs-12">
-              <h1>Travelling</h1>
-              <h1>_____________</h1>
-              <p><br><br>This year, I left the country for the first time! We went to Mexico for 8 days.<br><br></p>
-            </div>
-          </div>
-          
-          <div class="row"> 
-            <div class="col-lg-4 col-xs-4">
-              <div class="thumbnail">
-                  <img src="/Images/Mexico1.jpg" alt="Mexico1">
-              </div>
-            </div>
-            <div class="col-lg-4 col-xs-4 ">
-              <div class="thumbnail">
-                  <img src="/Images/Mexico2.jpg" alt="Mexico2">
-              </div>
-            </div>
-            <div class="col-lg-4 col-xs-4 ">
-              <div class="thumbnail">
-                  <img src="/Images/Mexico3.jpg" alt="Mexico3">
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12 col-xs-12 ">
-              <h1>Drawing</h1>
-              <h1>_____________</h1>
-              <p><br><br>Just started sketching.<br><br></p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12 col-xs-12 ">
-              <h1>Cooking</h1>
-              <h1>_____________</h1>
-              <p><br><br>Cooking Adventures<br><br></p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
