@@ -15,24 +15,35 @@
 
     <!--JQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  
+   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
     <style>
     html, body {
       height:100%;
     }
-    .intro-bg {
-      background-image: url('/Images/Graduation4.jpg');
+    body {
+      font: 16px "Montserrat", sans-serif;
+    }
+    .intro-section {
+      background-image: url('/Images/introBackground.png');
       background-size:cover;
       color: #ffffff;
       font-size:70px;
       height:100%;
+      padding: 60px 50px;
 
       /* Create the parallax scrolling effect */
       background-attachment: fixed;
       background-repeat: no-repeat;
     }
+    .intro-section .img-circle {
+      max-height: 80%;
+      width: auto;
+      padding: 20px 0 0 0;
+    }
     .about-subsection {
-      background-color:rgb(73, 73, 73);
+      background-color:#474e5d;
       color: #ffffff;
       height:100%;
     }
@@ -55,7 +66,7 @@
       color: #ffffff;
       padding: 60px 50px;
     }
-    div.interests-subsection h2{
+    .interests-subsection h2{
       color: rgb(73, 73, 73);
     }
     .interests-subsection img {
@@ -64,12 +75,6 @@
     .interests-subsection hr {
       border-color: rgb(73, 73, 73);
     }
-    /*.right-col {
-      overflow-y:scroll;
-    }
-    .right-col::-webkit-scrollbar { 
-      display: none; 
-    }*/
     .thumbnail {
       padding: 0 0 0 0;
       border: 1.5px solid #ffffff;
@@ -156,6 +161,23 @@
       
     }
 
+    .people-subsection {
+      background-color:#474e5d;
+      color: #ffffff;
+      padding: 60px 50px 0 50px;
+    }
+    .people-subsection h2 {
+      color:#DB9281;
+    }
+    .people-subsection .row .col-lg-3 {
+      padding: 60px 0 0 0;
+
+    }
+    .people-subsection img {
+      height:100%;
+      width:100%;
+    }
+
     </style>
   </head>
 
@@ -163,9 +185,10 @@
 
   <body>
     <!--Intro section-->
-    <div class="container-fluid intro-bg" style="padding: 60px 50px;">
-      <h1>I'm Cynthia</h1>
+    <div class="container-fluid intro-section text-center">
+      <h1>Hey, I'm Cynthia</h1>
       <h2>___________________</h2>
+      <img src="/Images/Cynthia.jpg" alt="Cynthia" class="img-circle">
     </div>
     
     <!--About section-->
@@ -404,28 +427,44 @@
                 <li data-target="#foodCarousel" data-slide-to="2"></li>
                 <li data-target="#foodCarousel" data-slide-to="3"></li>
                 <li data-target="#foodCarousel" data-slide-to="4"></li>
+                <li data-target="#foodCarousel" data-slide-to="5"></li>
+                <li data-target="#foodCarousel" data-slide-to="6"></li>
+                <li data-target="#foodCarousel" data-slide-to="7"></li>
+                <li data-target="#foodCarousel" data-slide-to="8"></li>
               </ol>
             
               <!-- Wrapper for slides -->
               <div class="carousel-inner">
                 <div class="item active">
-                  <img src="/Images/Graduation1.jpg" alt="Graduation1">
+                  <img src="/Images/Cooking/homeFood1.jpg" alt="homeFood1">
                 </div>
             
                 <div class="item">
-                  <img src="/Images/Graduation2.jpg" alt="Graduation2">
+                  <img src="/Images/Cooking/homeFood2.jpg" alt="homeFood2">
                 </div>
             
                 <div class="item">
-                  <img src="/Images/Graduation3.jpg" alt="Graduation3">
+                  <img src="/Images/Cooking/homeFood3.jpg" alt="homeFood3">
                 </div>
   
                 <div class="item">
-                  <img src="/Images/Graduation4.jpg" alt="Graduation4">
+                  <img src="/Images/Cooking/homeFood4.jpg" alt="homeFood4">
                 </div>
   
                 <div class="item">
-                  <img src="/Images/Graduation5.jpg" alt="Graduation5">
+                  <img src="/Images/Cooking/homeFood5.jpg" alt="homeFood5">
+                </div>
+  
+                <div class="item">
+                  <img src="/Images/Cooking/homeFood6.jpg" alt="homeFood6">
+                </div>
+  
+                <div class="item">
+                  <img src="/Images/Cooking/homeFood7.jpg" alt="homeFood7">
+                </div>
+  
+                <div class="item">
+                  <img src="/Images/Cooking/homeFood8.jpg" alt="homeFood8">
                 </div>
               </div>
               <div class="text-center">
@@ -439,6 +478,27 @@
       </div>
     </div>
     
+    <div class="container-fluid people-subsection">
+      <div class="row">
+        <div class="col-lg-12 col-xs-12">
+          <h1>People</h1>
+          <h2>_____________</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-xs-3">          
+          <img src="Images/People/Andy.png" alt="Andy">
+        </div>
+        <div class="col-lg-3 col-xs-3">          
+          <img src="Images/People/Andy.png" alt="Andy">
+        </div>
+        <div class="col-lg-3 col-xs-3">          
+          <img src="Images/People/Andy.png" alt="Andy">
+        </div>
+        <div class="col-lg-3 col-xs-3">          
+          <img src="Images/People/Andy.png" alt="Andy">
+        </div>
+      </div>
+    </div>
 
     <script>
       // Get the modal
