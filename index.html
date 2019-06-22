@@ -165,17 +165,22 @@
       background-color:#474e5d;
       color: #ffffff;
       height:100%;
-    }
-    .people-subsection .row .col-lg-3, .people-subsection .row .col-xs-6{
-      position:relative;
-      height:495px;
+      
+      overflow-x:hidden;
+      overflow-y:hidden;
     }
     .people-subsection .row .col-lg-12, .people-subsection .row .col-xs-12 {
       padding: 60px 50px 60px 50px;
-
     }
     .people-subsection h2 {
       color:#DB9281;
+    }
+    .people-images{
+      position:relative;
+      height:510px;
+    }
+    .people-images img:hover {
+      transform: scale(1.05);
     }
     #Andy{
       position: absolute; /* search up relative vs absolute and fix the hover*/
@@ -186,22 +191,17 @@
     }
     #Gordon{
       position: absolute;
-      left: 0;
-      bottom: 0;
-      width:auto;
-      height:100%;
-    }
-    #Parents{
-      position: absolute;
-      left: 0;
+      left: 60px;
       bottom: 0;
       width:auto;
       height:80%;
-      
     }
-    .people-subsection .row .col-lg-3 img:hover, .people-subsection .row .col-xs-6 img:hover {
-      position: relative; 
-      top: -10px;
+    #Parents{
+      position: absolute;
+      left: -20px;
+      bottom: 0;
+      width:auto;
+      height:80%;      
     }
     /* Tooltip */
     .tooltip > .tooltip-inner {
@@ -521,19 +521,18 @@
       <div class="row">
         <div class="col-lg-12 col-xs-12">
           <h1>People</h1>
-          <h2>_____________</h2>
+          <h2>_____________ </h2>
+        </div>
       </div>
       <div class="row">
-        <div class="col-lg-3 col-xs-6">          
+        <div class="col-lg-3 col-xs-6 people-images">          
           <img src="Images/People/Andy.png" alt="Andy" id="Andy" class="peopleToolTips" data-toggle="tooltip" title="Hey, I'm Andy!">
         </div>
-        <div class="col-lg-3 col-xs-6">          
+        <div class="col-lg-3 col-xs-6 people-images">          
           <img src="Images/People/Gordon.png" alt="Gordon" id="Gordon" class="peopleToolTips" data-toggle="tooltip" title="Hey, I'm Gordon!">
         </div>
-        <div class="col-lg-3 col-xs-6">       
+        <div class="col-lg-6 col-xs-12 people-images">       
           <img src="Images/People/Parents.png" alt="Gordon" id="Parents" class="peopleToolTips" data-toggle="tooltip" title="Hey, we're Shirley & Ten, her parents!">   
-        </div>
-        <div class="col-lg-3 col-xs-6">
         </div>
       </div>
     </div>
