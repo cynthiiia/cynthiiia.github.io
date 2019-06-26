@@ -136,7 +136,7 @@
         <div class="row">
 
           <div class="col-lg-12 col-xs-12">
-            <div class="thumbnail slideanim">
+            <div class="thumbnail">
               <img id="Mexico1" src="/Images/Mexico4.jpg" alt="Palm Trees!">
             </div>
           </div>
@@ -146,13 +146,13 @@
         <div class="row">
 
           <div class="col-lg-6 col-xs-6">
-            <div class="thumbnail slideanim">
+            <div class="thumbnail">
               <img id="Mexico2" src="/Images/Mexico1.jpg" alt="Taco Cart Tacos - Our favourite item in the resort">
             </div>
           </div>
 
           <div class="col-lg-6 col-xs-6">
-            <div class="thumbnail slideanim">
+            <div class="thumbnail">
               <img id="Mexico3" src="/Images/Mexico5.jpg" alt="Window Seat View">
             </div>
           </div>
@@ -161,7 +161,7 @@
         <div class="row">
 
           <div class="col-lg-12 col-xs-12">
-            <div class="thumbnail slideanim">
+            <div class="thumbnail">
               <img id="Mexico4" src="/Images/Mexico8.jpg" alt="Beach">
             </div>
           </div>
@@ -174,13 +174,13 @@
         <div class="row">
 
           <div class="col-lg-6 col-xs-6">
-            <div class="thumbnail slideanim">
+            <div class="thumbnail">
               <img id="Mexico5" src="/Images/Mexico2.jpg" alt="Gordon & his breakfast">
             </div>
           </div>
 
           <div class="col-lg-6 col-xs-6">
-            <div class="thumbnail slideanim">
+            <div class="thumbnail">
               <img id="Mexico6" src="/Images/Mexico3.jpg" alt="By the Pool">
             </div>
           </div>
@@ -189,7 +189,7 @@
         <div class="row">
 
           <div class="col-lg-12 col-xs-12">
-            <div class="thumbnail slideanim">
+            <div class="thumbnail">
               <img id="Mexico7" src="/Images/Mexico9.jpg" alt="La Fleur Appetizer">
             </div>
           </div>
@@ -199,7 +199,7 @@
         <div class="row">
 
           <div class="col-lg-12 col-xs-12">
-            <div class="thumbnail slideanim">
+            <div class="thumbnail">
               <img id="Mexico8" src="/Images/Mexico10.jpg" alt="Mmm Cocktails">
             </div>
           </div>
@@ -213,7 +213,7 @@
         <div class="row">
 
           <div class="col-lg-12 col-xs-12">
-            <div class="thumbnail slideanim">
+            <div class="thumbnail">
               <img id="Mexico9" src="/Images/Mexico11.jpg" alt="Balcony">
             </div>
           </div>
@@ -222,7 +222,7 @@
         <div class="row">
 
           <div class="col-lg-12 col-xs-12">
-            <div class="thumbnail slideanim">
+            <div class="thumbnail">
               <img id="Mexico10" src="/Images/Mexico12.jpg" alt="Beach">
             </div>
           </div>
@@ -232,13 +232,13 @@
         <div class="row">
 
           <div class="col-lg-6 col-xs-6">
-            <div class="thumbnail slideanim">
+            <div class="thumbnail">
               <img id="Mexico11" src="/Images/Mexico6.jpg" alt="Lizard - They were everywhere!">
             </div>
           </div>
 
           <div class="col-lg-6 col-xs-6">
-            <div class="thumbnail slideanim">
+            <div class="thumbnail">
               <img id="Mexico12" src="/Images/Mexico7.jpg" alt="Path that spans across the entire resort">
             </div>
           </div>
@@ -424,18 +424,33 @@
       }
     }
 
-    //Slide Animation jquery
-    $(window).scroll(function () {
-      $(".slideanim").each(function () {
-        var pos = $(this).offset().top;
+    // stick title code
+    // When the user scrolls the page, execute myFunction 
+    window.onscroll = function () { myFunction() };
 
-        var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
-        }
-      });
-    });
+    // Get the navbar
+    var about = document.getElementById("about-title");
+    var interests = document.getElementById("interests-title");
+      var aboutSticky = about.offsetTop;
+      var interestsSticky = interests.offsetTop;
 
+    // Get the offset position of the navbar
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset >= aboutSticky & window.pageYOffset < interestsSticky) {
+        about.classList.add("sticky-title")
+        interests.classList.remove("sticky-title");
+      } else if (window.pageYOffset >= interestsSticky) {
+        about.classList.remove("sticky-title");
+        interests.classList.add("sticky-title");
+      } else if(window.pageYOffset < aboutSticky) {
+        about.classList.remove("sticky-title");
+      }
+    }
+
+
+      // Fade in/out of content
   </script>
 </body>
 

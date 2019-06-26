@@ -6,47 +6,6 @@ body {
     font: 16px "Montserrat", "sans-serif";
 }
 
-/*slide animation*/
-
-.slideanim {
-    visibility: hidden;
-}
-
-.slide {
-    /* The name of the animation */
-    animation-name: slide;
-    -webkit-animation-name: slide;
-    /* The duration of the animation */
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    /* Make the element visible */
-    visibility: visible;
-}
-
-/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
-
-@keyframes slide {
-    0% {
-        opacity: 0;
-        transform: translateY(70%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0%);
-    }
-}
-
-@-webkit-keyframes slide {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(70%);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0%);
-    }
-}
-
 .intro-section {
     background-image: url('/Images/introBackground.png');
     background-size: cover;
@@ -104,10 +63,9 @@ body {
     border: none;
     cursor: pointer;
     outline: none;
-    top: 20px;
-    /* adjust this */
-    right: 20px;
-    position: fixed;
+    top : 20px; /* adjust this */
+    right : 20px;
+    position:fixed;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -118,10 +76,9 @@ body {
     background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    top: 91px;
-    /* adjust this */
-    right: 20px;
-    position: fixed;
+    top : 91px; /* adjust this */
+    right : 20px;
+    position:fixed;
 }
 
 /* Links inside the dropdown */
@@ -166,6 +123,14 @@ body {
     color: #ffffff;
     height: 25%;
     z-index: 1;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+
+.sticky-title {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 #about-title .col-lg-12 {
@@ -234,11 +199,11 @@ body {
     color: #ffffff;
     padding: 60px 50px;
 }
-
 #interests-title {
     background-color: #DB9281;
     color: #ffffff;
     z-index: 1;
+
 }
 
 .interests-subsection h2 {
