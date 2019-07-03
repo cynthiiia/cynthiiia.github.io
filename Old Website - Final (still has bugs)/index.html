@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Cynthia Wang</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--JQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+  <link href="index-styles.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--Intro section-->
+  <div class="container-fluid intro-section" id="Home">
+    <div id="myDropdown" class="row dropdown sticky">
+      <button onclick="menu()" id="myDropBtn" class="dropbtn">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </button>
+      <div id="myDropdownContent" class="dropdown-content">
+        <a href="#Home" onclick="menu()">Home</a>
+        <a href="#About" onclick="menu()">About</a>
+        <a href="#Interests" onclick="menu()">Interests</a>
+        <a href="#People" onclick="menu()">People</a>
+      </div>
+    </div>
+    <div class="row  text-center">
+      <h1>Hey, I'm Cynthia</h1>
+      <h2>___________________</h2>
+      <img src="/Images/Cynthia.jpg" alt="Cynthia" class="img-circle">
+    </div>
+  </div>
+
+  <!--About section-->
+  <div class="container-fluid about-subsection" id="About">
+    <div class="row" id="about-title">
+      <div class="col-lg-12 col-xs-12">
+        <h1>About</h1>
+        <h2>_____________</h2>
+      </div>
+    </div>
+    <div class="row">
+
+      <!--About section heading-->
+      <div class="col-lg-6 col-xs-12 left-about-section">
+        <!-- <h1>About</h1>
+          <h2>_____________</h2> -->
+        <h3><br>Hello There!</h3>
+        <p>I am a recent graduate of the University of Toronto specializing in Accounting, with a minor in Economics.
+          This fall, I will be starting my career as a Technical Consultant at Oracle | Netsuite.</p><br>
+      </div>
+
+
+      <!--Convocation section heading-->
+      <div class="col-lg-6 col-xs-12">
+
+        <h3>Convocation - June 4, 2019 <span class="glyphicon glyphicon-heart-empty" style="color:#DB9281 "></span></h3>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" style="background-color: rgb(73, 73, 73)">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="/Images/Graduation1.jpg" alt="Graduation1">
+            </div>
+
+            <div class="item">
+              <img src="/Images/Graduation2.jpg" alt="Graduation2">
+            </div>
+
+            <div class="item">
+              <img src="/Images/Graduation3.jpg" alt="Graduation3"">
+              </div>
+
+              <div class=" item">
+              <img src="/Images/Graduation4.jpg" alt="Graduation4">
+            </div>
+
+            <div class="item">
+              <img src="/Images/Graduation5.jpg" alt="Graduation5">
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Interests section-->
+  <div class="container-fluid interests-subsection" id="Interests">
+    <div class="row">
+
+      <!--Interests section heading-->
+      <div class="col-lg-12 col-xs-12" id="interests-title">
+        <h1>Interests</h1>
+        <h2>_____________</h2>
+        <h3><br>Travelling</h3>
+        <p><br>This year, I left the country for the first time! We went to Mexico for 8 days. We stayed at the Grand
+          Princess Sunset all-inclusive resort.</p><br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-xs-12 ">
+        <div class="row">
+
+          <div class="col-lg-12 col-xs-12">
+            <div class="thumbnail slideanim">
+              <img id="Mexico1" src="/Images/Mexico4.jpg" alt="Palm Trees!">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6 col-xs-6">
+            <div class="thumbnail slideanim">
+              <img id="Mexico2" src="/Images/Mexico1.jpg" alt="Taco Cart Tacos - Our favourite item in the resort">
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-xs-6">
+            <div class="thumbnail slideanim">
+              <img id="Mexico3" src="/Images/Mexico5.jpg" alt="Window Seat View">
+            </div>
+          </div>
+
+        </div>
+        <div class="row">
+
+          <div class="col-lg-12 col-xs-12">
+            <div class="thumbnail slideanim">
+              <img id="Mexico4" src="/Images/Mexico8.jpg" alt="Beach">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="col-lg-4 col-xs-12 ">
+
+        <div class="row">
+
+          <div class="col-lg-6 col-xs-6">
+            <div class="thumbnail slideanim">
+              <img id="Mexico5" src="/Images/Mexico2.jpg" alt="Gordon & his breakfast">
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-xs-6">
+            <div class="thumbnail slideanim">
+              <img id="Mexico6" src="/Images/Mexico3.jpg" alt="By the Pool">
+            </div>
+          </div>
+
+        </div>
+        <div class="row">
+
+          <div class="col-lg-12 col-xs-12">
+            <div class="thumbnail slideanim">
+              <img id="Mexico7" src="/Images/Mexico9.jpg" alt="La Fleur Appetizer">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-12 col-xs-12">
+            <div class="thumbnail slideanim">
+              <img id="Mexico8" src="/Images/Mexico10.jpg" alt="Mmm Cocktails">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-lg-4 col-xs-12 ">
+
+        <div class="row">
+
+          <div class="col-lg-12 col-xs-12">
+            <div class="thumbnail slideanim">
+              <img id="Mexico9" src="/Images/Mexico11.jpg" alt="Balcony">
+            </div>
+          </div>
+
+        </div>
+        <div class="row">
+
+          <div class="col-lg-12 col-xs-12">
+            <div class="thumbnail slideanim">
+              <img id="Mexico10" src="/Images/Mexico12.jpg" alt="Beach">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6 col-xs-6">
+            <div class="thumbnail slideanim">
+              <img id="Mexico11" src="/Images/Mexico6.jpg" alt="Lizard - They were everywhere!">
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-xs-6">
+            <div class="thumbnail slideanim">
+              <img id="Mexico12" src="/Images/Mexico7.jpg" alt="Path that spans across the entire resort">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+      </div>
+
+    </div>
+    <hr>
+    <!--
+      <div class="row">
+        <div class="col-lg-12 col-xs-12"> 
+          <h3>Shows</h3>
+          
+        </div>
+      </div>
+      
+      <hr>-->
+
+    <div class="row">
+      <div class="col-lg-4 col-xs-12">
+        <h3>Cooking</h3><br>
+        <p>There's something magical about chopping ingredients, tossing them together, and seeing the final result.
+          I've been cooking so many dishes and desserts recently, and although I'm super slow (...takes me double the
+          time to make a dish), it's incredibly fun.</p>
+        <p>Click "Eat!" to randomize to a dish I've made and hover for its recipe!</p>
+      </div>
+      <div class="col-lg-8 col-xs-12">
+
+        <div id="foodCarousel" class="carousel slide" data-ride="carousel" style="background-color: rgb(73, 73, 73)">
+          <!-- Indicators -->
+
+          <ol class="carousel-indicators">
+            <li data-target="#foodCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#foodCarousel" data-slide-to="1"></li>
+            <li data-target="#foodCarousel" data-slide-to="2"></li>
+            <li data-target="#foodCarousel" data-slide-to="3"></li>
+            <li data-target="#foodCarousel" data-slide-to="4"></li>
+            <li data-target="#foodCarousel" data-slide-to="5"></li>
+            <li data-target="#foodCarousel" data-slide-to="6"></li>
+            <li data-target="#foodCarousel" data-slide-to="7"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="/Images/Cooking/homeFood1.jpg" alt="homeFood1">
+            </div>
+
+            <div class="item">
+              <img src="/Images/Cooking/homeFood2.jpg" alt="homeFood2">
+            </div>
+
+            <div class="item">
+              <img src="/Images/Cooking/homeFood3.jpg" alt="homeFood3">
+            </div>
+
+            <div class="item">
+              <img src="/Images/Cooking/homeFood4.jpg" alt="homeFood4">
+            </div>
+
+            <div class="item">
+              <img src="/Images/Cooking/homeFood5.jpg" alt="homeFood5">
+            </div>
+
+            <div class="item">
+              <img src="/Images/Cooking/homeFood6.jpg" alt="homeFood6">
+            </div>
+
+            <div class="item">
+              <img src="/Images/Cooking/homeFood7.jpg" alt="homeFood7">
+            </div>
+
+            <div class="item">
+              <img src="/Images/Cooking/homeFood8.jpg" alt="homeFood8">
+            </div>
+          </div>
+          <div class="text-center">
+            <button id="eatButton" type="button" class="btn btn-primary">Eat!</button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+  <div class="container-fluid people-subsection" id="People">
+    <div class="row">
+      <div class="col-lg-12 col-xs-12">
+        <h1>People</h1>
+        <h2>_____________ </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-xs-6 people-images">
+        <a href="https://andywang99.github.io/" target="_blank"><img src="Images/People/Andy.png" alt="Andy" id="Andy"
+            class="peopleToolTips" data-toggle="tooltip" title="Hey, I'm Andy! Click on me to know more about me."></a>
+      </div>
+      <div class="col-lg-3 col-xs-6 people-images">
+        <img src="Images/People/Gordon.png" alt="Gordon" id="Gordon" class="peopleToolTips" data-toggle="tooltip"
+          title="Hey, I'm Gordon!">
+      </div>
+      <div class="col-lg-6 col-xs-12 people-images">
+        <img src="Images/People/Parents.png" alt="Gordon" id="Parents" class="peopleToolTips" data-toggle="tooltip"
+          title="Hey, we're Shirley & Ten Shing, her parents!">
+      </div>
+    </div>
+  </div>
+
+
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    for (var i = 1; i < 13; i++) {
+      var img = document.getElementById("Mexico" + i);
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+    }
+
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    //Food Carousel
+    $(document).ready(function () {
+      $("#eatButton").click(function () {
+        var currentSlide = $('#foodCarousel .carousel-indicators li.active').index();
+        var rand = Math.floor((Math.random() * $('#foodCarousel .item').length));
+        while (rand == currentSlide) {
+          rand = Math.floor((Math.random() * $('#foodCarousel .item').length));
+        }
+        $('#foodCarousel .item').removeClass('active').eq(rand).addClass("active");
+        $('#foodCarousel .carousel-indicators li').removeClass('active').eq(rand).addClass("active");
+      });
+    });
+
+    //Tooltips
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip({
+        container: 'body'
+      })
+    })
+
+    // Menu animation and dropdown show/close
+    function menu(x) {
+      document.getElementById("myDropBtn").classList.toggle("change");
+      document.getElementById("myDropdownContent").classList.toggle("show");
+    }
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+        if (document.getElementById("myDropdownContent").classList.contains('show')) {
+          menu();
+        }
+      }
+    }
+
+    //Slide Animation jquery
+    $(window).scroll(function () {
+      $(".slideanim").each(function () {
+        var pos = $(this).offset().top;
+
+        var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+      });
+    });
+
+  </script>
+</body>
+
+
+</html>
