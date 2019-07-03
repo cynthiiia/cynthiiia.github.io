@@ -200,4 +200,9 @@ $(window).load(function () {
 });
 $(window).resize(function () {
   imageSizes()
+  if ($(window).width() > 990) {
+    $('.nav-menu').css({"display":"block"});
+ } else {
+    $('.nav-menu').css({"display":"none"});
+ }
 });

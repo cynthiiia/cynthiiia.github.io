@@ -24,7 +24,7 @@
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 767px) and (max-width: 991px) {
   /* Navbar */
   nav {
     padding: 10px 15px;
@@ -60,6 +60,7 @@
   #about .div-img-bg .about-img img {
     margin-top: 0%;
     margin-left: calc(0% - 0px);
+    object-position: 0% 30%;
   }
   #about .about-descr .p-heading {
     font-size: 20px;
