@@ -16,7 +16,7 @@ $(document).ready(function () {
 
     $('a').each(function () {
       $(this).removeClass('active');
-      if ($(window).width() < 768) {
+      if ($(window).width() < 991) {
         $('.nav-menu').slideUp();
       }
     });

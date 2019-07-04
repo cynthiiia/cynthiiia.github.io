@@ -538,7 +538,7 @@ nav ul li a {
   height: auto;
   width: 100%;
   padding-bottom: 100px;
-  padding-top: 110px;
+  padding-top: 120px;
 }
 
 .contact-details {
@@ -586,6 +586,51 @@ nav ul li a {
   margin: 0 0 20px;
   font-weight: 400;
   font-size: 13px;
+}
+
+#contact .socials-media {
+  width: 100%;
+}
+
+#contact .socials-media ul {
+  display: inline-block;
+  float: none;
+  margin: 0 0 20px 0;
+}
+
+#contact .socials-media ul li {
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#contact .socials-media ul li a {
+  font-size:100px;
+  color: #999;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  background: transparent;
+  text-transform: uppercase;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+#contact .socials-media ul li a .ion-email {
+  font-size:150px;
+}
+#contact .socials-media ul .linkedin-item {
+  padding-top:23px;
+}
+
+#contact .socials-media ul li a:hover {
+  color: #b8a07e;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
 }
 
 /*-----------------------------------------------------------------------------------*/
