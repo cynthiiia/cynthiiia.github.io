@@ -88,16 +88,11 @@ jQuery(document).ready(function($) {
         i.next('.validation').html((ierror ? (i.attr('data-msg') != undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
       }
     });
-    if (ferror) return false;
-    else var str = $(this).serialize();
-    var action = $(this).attr('action');
-    if( ! action ) {
-      action = 'contactform/contactform.php';
-    }
+    
     $.ajax({
       type: "POST",
-      url: action,
-      data: str,
+      url: 'contactform.php',
+      data: $("#contact-form").serialize(),
       success: function(msg) {
         // alert(msg);
         if (msg == 'OK') {
